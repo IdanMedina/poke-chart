@@ -1,16 +1,17 @@
 import styled from "styled-components";
 
 export const HeaderStyled = styled.header`
-  position:fixed;
+
   display: flex;
   flex-direction: column;
   width: 100%;
   min-height: 5rem;
-  padding: 0.875rem 1rem;
+  padding: 0.875rem 2.5rem;
   gap: 14px;
   justify-content: space-between;
   align-items: center;
   background-color: var(--grey-0);
+  z-index: 1;
 
   @media (min-width: 1024px) {
     padding: 0.875rem 2rem;

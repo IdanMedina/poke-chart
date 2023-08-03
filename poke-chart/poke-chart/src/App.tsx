@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import { iPokemon, iPokemonFound } from "./@types";
 import { api } from "./services/api";
 import axios from "axios";
+import Main from "./components/Main";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -35,6 +36,7 @@ function App() {
         .then((response) => {
           const pokemonFound: iPokemonFound = {
             id: response.data.id,
+            name: response.data.name,
             height: response.data.height,
             weight: response.data.weight,
             sprites: response.data.sprites.other.home.front_default,
@@ -48,6 +50,7 @@ function App() {
         });
     }
     console.log(pokemon)
+    return pokemon
   }
 
   return (
@@ -57,6 +60,7 @@ function App() {
           pokemons={pokemons}
           findPokemon={findPokemon}
         />
+        <Main pokemon={pokemon}/>
       </>
     </div>
   );

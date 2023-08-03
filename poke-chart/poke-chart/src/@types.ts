@@ -1,6 +1,7 @@
 export interface iProps{
-    findPokemon: (data: string) => void,
-    pokemons: iPokemon[]
+    findPokemon?: (data: string) => void,
+    pokemons?: iPokemon[]
+    pokemon?: iPokemonFound
   }
   
 export interface iPokemon {
@@ -23,15 +24,14 @@ type type = {
 
 export interface iPokemonFound {
   id:number;
+  name: string;
   height: number;
   weight: number;
-  sprites: {
-    other: {
-      home: {
-        front_default: string;
-      }
-    }
-  };
+  sprites: string;
   stats: Array<status>;
   types: Array<type>
+}
+
+export interface iStyledProps {
+  fontSize: number | undefined
 }

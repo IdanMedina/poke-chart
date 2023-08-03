@@ -1,5 +1,5 @@
 import React from "react";
-import InputSearch from "../Input";
+import InputSearch from "./Input";
 import { HeaderStyled } from "../../styles/header";
 import { LogoDiv } from "../../styles/header";
 import Logo from "../../assets/pokemon_logo.jpeg"
