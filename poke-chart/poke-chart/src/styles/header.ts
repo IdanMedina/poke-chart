@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const HeaderStyled = styled.header`
-
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -16,12 +15,13 @@ export const HeaderStyled = styled.header`
   @media (min-width: 1024px) {
     padding: 0.875rem 2rem;
     flex-direction: row;
-  };
+  }
 
   @media (min-width: 1360px) {
     padding: 0.875rem 9rem;
   }
 `;
+
 export const LogoDiv = styled.div`
   display: flex;
   align-items: center;
@@ -32,7 +32,7 @@ export const LogoDiv = styled.div`
   @media (min-width: 1024px) {
     gap: 0.75rem;
     flex-direction: row;
-  };
+  }
 `;
 export const FormStyled = styled.form`
   position: relative;
@@ -40,10 +40,10 @@ export const FormStyled = styled.form`
   width: 100%;
 
   @media (min-width: 1024px) {
-  width: 20rem;
+    width: 20rem;
   }
 
   @media (min-width: 1360px) {
     width: 23rem;
-    }
+  }
 `;

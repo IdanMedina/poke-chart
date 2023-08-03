@@ -35,7 +35,7 @@ export const GlobalStyle = createGlobalStyle`
     flex-direction: column;
     width: 100vw;
     min-height: 5rem;
-    padding: 0.875rem 1rem;
+    padding: 2rem 1rem 3rem 1rem;
     gap: 1rem;
     justify-content: space-between;
     align-items: center;
@@ -45,7 +45,7 @@ export const GlobalStyle = createGlobalStyle`
     };
 
     @media (min-width: 1360px) {
-    padding: 1.5rem 4rem;
+    padding: 2.5rem 4rem 5rem 4rem;
     }
   }
 `;

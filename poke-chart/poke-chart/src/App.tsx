@@ -4,6 +4,7 @@ import { iPokemon, iPokemonFound } from "./@types";
 import { api } from "./services/api";
 import axios from "axios";
 import Main from "./components/Main";
+import Footer from "./components/Footer";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -61,6 +62,7 @@ function App() {
           findPokemon={findPokemon}
         />
         <Main pokemon={pokemon}/>
+        <Footer />
       </>
     </div>
   );
