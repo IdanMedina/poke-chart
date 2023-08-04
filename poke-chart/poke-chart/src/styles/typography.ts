@@ -21,6 +21,7 @@ export const CardName = styled.h2`
   margin-bottom: 1.5rem;
 `;
 export const HPStat = styled.h4<iStyledProps>`
+  padding-bottom: 2rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: ${(props) => props.fontSize! * 0.01 + 1.5}rem;
@@ -31,6 +32,7 @@ export const HPStat = styled.h4<iStyledProps>`
   }
 `;
 export const AttStat = styled.h4<iStyledProps>`
+  padding-bottom: 1rem;
   font-weight: 600;
   font-size: ${(props) => props.fontSize! * 0.01 + 1.5}rem;
   color: var(--color-secondary-50);
@@ -49,6 +51,7 @@ export const DefStat = styled.h4<iStyledProps>`
   }
 `;
 export const SpAttStat = styled.h4<iStyledProps>`
+  padding-top: 1rem;
   font-weight: 600;
   font-size: ${(props) => props.fontSize! * 0.01 + 1.5}rem;
   color: var(--color-secondary);
@@ -58,6 +61,7 @@ export const SpAttStat = styled.h4<iStyledProps>`
   }
 `;
 export const SpDefStat = styled.h4<iStyledProps>`
+  padding-top: 2rem;
   font-weight: 600;
   font-size: ${(props) => props.fontSize! * 0.01 + 1.5}rem;
   color: var(--grey-50);

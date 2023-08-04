@@ -46,7 +46,7 @@ export const CardImg = styled.img`
   transition: transform .333s;
   cursor: pointer;
   &:hover {
-    transform: scale(2);
+    transform: scale(3);
     background: var(--color-white)
     z-index:2;
   }
