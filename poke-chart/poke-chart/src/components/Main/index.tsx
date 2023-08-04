@@ -7,13 +7,15 @@ import Chart from "./Chart";
 const Main = ({ pokemon }: iProps) => {
   return pokemon ? (
     <main>
-      <Chart pokemon={pokemon}/>
-      <Card pokemon={pokemon}/>
+      <Chart pokemon={pokemon} />
+      <Card pokemon={pokemon} />
     </main>
   ) : (
+    <main>
       <figure>
         <PokeballImg src={Pokeball} alt="Pokeball" />
       </figure>
+    </main>
   );
 };
 

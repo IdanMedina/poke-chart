@@ -4,7 +4,7 @@ import { iStyledProps } from "../@types";
 export const Title = styled.h1`
   font-weight: 800;
   font-size: 4rem;
-  font-family: "Handjet", sans-serif;
+  font-family: 'Handjet', cursive;
   color: var(--grey-100);
 `;
 

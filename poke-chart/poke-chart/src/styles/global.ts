@@ -25,9 +25,10 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     list-style: none;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     background-color: var(--color-white)
+    max-width:100vw
   }  
 
   main {

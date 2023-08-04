@@ -56,14 +56,14 @@ function App() {
 
   return (
     <div>
-      <>
+      
         <Header
           pokemons={pokemons}
           findPokemon={findPokemon}
         />
         <Main pokemon={pokemon}/>
         <Footer />
-      </>
+      
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import InputSearch from "./Input";
-import { HeaderStyled } from "../../styles/header";
+import { HeaderStyled, LogoImg } from "../../styles/header";
 import { LogoDiv } from "../../styles/header";
 import Logo from "../../assets/pokemon_logo.jpeg"
 import { iProps } from "../../@types";
@@ -11,7 +11,7 @@ const Header = ({ pokemons, findPokemon }: iProps) => {
     <HeaderStyled>
       <LogoDiv>
         <figure>
-          <img src={ Logo } alt="Logo Pokémon" />
+          <LogoImg src={ Logo } alt="Logo Pokémon" />
         </figure>
         <Title>chart</Title>
       </LogoDiv>

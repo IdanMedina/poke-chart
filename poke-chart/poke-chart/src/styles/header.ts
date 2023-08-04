@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HeaderStyled = styled.header`
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
   min-height: 5rem;
   padding: 0.875rem 2.5rem;
   gap: 14px;
@@ -32,6 +32,18 @@ export const LogoDiv = styled.div`
   @media (min-width: 1024px) {
     gap: 0.75rem;
     flex-direction: row;
+  }
+`;
+export const LogoImg = styled.img`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width:100vw;
+  height: 10rem;
+
+  @media (min-width: 1024px) {
+    
   }
 `;
 export const FormStyled = styled.form`
