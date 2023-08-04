@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const FooterStyled = styled.header`
-  position: static;
+  position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
   min-height: 1rem;
   padding: 0.875rem 2.5rem;
   align-items: center;

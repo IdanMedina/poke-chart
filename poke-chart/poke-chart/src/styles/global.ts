@@ -28,12 +28,13 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     background-color: var(--color-white)
-    max-width:100vw
+    max-width:100vw;
   }  
 
   main {
     display: flex;
     flex-direction: column;
+    height: 100%;
     width: 100vw;
     min-height: 5rem;
     padding: 2rem 1rem 3rem 1rem;

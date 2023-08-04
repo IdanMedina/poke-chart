@@ -7,7 +7,7 @@ export const ChartDiv = styled.div`
   align-items: center;
   justify-content: space-between;
   height: 346px;
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem 0rem 0.5rem;
 
   @media (min-width: 1024px) {
     width:50vw
