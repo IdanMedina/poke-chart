@@ -45,6 +45,7 @@ export const LogoImg = styled.img`
 
 export const InputNavDiv = styled.div`
   width: 100%;
+  
   @media (min-width: 1024px) {
     max-width: 24rem;
   }
@@ -76,6 +77,7 @@ export const NavLink = styled.nav`
   justify-content: space-around;
   text-align: center;
   margin-top: 1.5rem;
+
   @media (min-width: 1024px) {
     width: 20rem;
   }

@@ -13,14 +13,23 @@ export const ChartIcon = styled(TbChartInfographic)`
     cursor:pointer;
     color: var(--color-secondary);
     scale: 2;
+    &:hover {
+        color: var(--color-secondary-50);;
+      }
 `
 export const HomeIcon = styled(MdCatchingPokemon)`
     cursor:pointer;
     color: var(--color-secondary);
     scale: 2;
+    &:hover {
+        color: var(--color-secondary-50);;
+      }
 `
 export const CardIcon = styled(BsPersonVcard)`
     cursor:pointer;
     color: var(--color-secondary);
     scale: 2;
+    &:hover {
+        color: var(--color-secondary-50);;
+      }
 `
