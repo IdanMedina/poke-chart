@@ -30,7 +30,7 @@ export const HPStat = styled.h4<iStyledProps>`
   cursor: pointer;
   &:hover {
     transform: scale(2);
-    background: var(--color-white)
+    opacity: 0.67;
     z-index:2;
   }
   
@@ -47,7 +47,7 @@ export const AttStat = styled.h4<iStyledProps>`
   cursor: pointer;
   &:hover {
     transform: scale(2);
-    background: var(--color-white)
+    opacity: 0.67;
     z-index:2;
   }
 
@@ -63,7 +63,7 @@ export const DefStat = styled.h4<iStyledProps>`
   cursor: pointer;
   &:hover {
     transform: scale(2);
-    background: var(--color-white)
+    opacity: 0.67;
     z-index:2;
   }
 
@@ -80,7 +80,7 @@ export const SpAttStat = styled.h4<iStyledProps>`
   cursor: pointer;
   &:hover {
     transform: scale(2);
-    background: var(--color-white)
+    opacity: 0.67;
     z-index:2;
   }
 
@@ -96,8 +96,8 @@ export const SpDefStat = styled.h4<iStyledProps>`
   transition: transform .5s;
   cursor: pointer;
   &:hover {
+    opacity: 0.67;
     transform: scale(2);
-    background: var(--color-white)
     z-index:2;
   }
 
@@ -113,7 +113,7 @@ export const SpeedStat = styled.h4<iStyledProps>`
   cursor: pointer;
   &:hover {
     transform: scale(2);
-    background: var(--color-white)
+    opacity: 0.67;
     z-index:2;
   }
 

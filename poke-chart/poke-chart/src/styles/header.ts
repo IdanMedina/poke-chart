@@ -5,6 +5,7 @@ export const HeaderStyled = styled.header`
   flex-direction: column;
   width: 100vw;
   min-height: 5rem;
+  margin-bottom: 1rem;
   padding: 0.875rem 2.5rem;
   gap: 14px;
   justify-content: space-between;
@@ -14,10 +15,12 @@ export const HeaderStyled = styled.header`
 
   @media (min-width: 1024px) {
     padding: 0.875rem 2rem;
+    margin-bottom: 2rem;
     flex-direction: row;
   }
 
   @media (min-width: 1360px) {
+    margin-bottom: 3rem;
     padding: 0.875rem 9rem;
   }
 `;
