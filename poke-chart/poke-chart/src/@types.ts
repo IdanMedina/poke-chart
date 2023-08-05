@@ -1,37 +1,43 @@
-export interface iProps{
-    findPokemon?: (data: string) => void,
-    pokemons?: iPokemon[]
-    pokemon?: iPokemonFound
-  }
-  
+
+export interface iHomeContext {
+  findPokemon?: (data: string) => void;
+  pokemons?: iPokemon[];
+  pokemon?: iPokemonFound;
+  setPokemon?: React.Dispatch<React.SetStateAction<iPokemonFound | undefined>>
+}
+
+export interface iHomeProviderProps {
+  children: React.ReactNode;
+}
+
 export interface iPokemon {
-    name: string;
-    url: string
+  name: string;
+  url: string;
 }
 
 type status = {
-  base_stat:number;
+  base_stat: number;
   stat: {
     name: string;
-  }
-}
+  };
+};
 
 type type = {
   type: {
-    name:string
-  }
-}
+    name: string;
+  };
+};
 
 export interface iPokemonFound {
-  id:number;
+  id: number;
   name: string;
   height: number;
   weight: number;
   sprites: string;
   stats: Array<status>;
-  types: Array<type>
+  types: Array<type>;
 }
 
 export interface iStyledProps {
-  fontSize: number | undefined
+  fontSize: number | undefined;
 }

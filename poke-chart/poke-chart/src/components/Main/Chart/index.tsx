@@ -1,4 +1,4 @@
-import { iProps } from "../../../@types";
+import { useContext } from "react";
 import {
   ChartDiv,
   ChartDivInfoOne,
@@ -13,8 +13,11 @@ import {
   SpAttStat,
   SpeedStat,
 } from "../../../styles/typography";
+import { HomeContext } from "../../../providers/HomeContext";
 
-const Chart = ({ pokemon }: iProps) => {
+const Chart = () => {
+  const { pokemon } = useContext(HomeContext);
+
   return (
     <ChartDiv>
       <ChartDivInfoOne>

@@ -1,14 +1,17 @@
-import { iProps } from "../../@types";
+import { useContext } from "react";
 import Pokeball from "../../assets/pokeball.png";
 import { PokeballImg } from "../../styles/image";
 import Card from "./Card";
 import Chart from "./Chart";
+import { HomeContext } from "../../providers/HomeContext";
 
-const Main = ({ pokemon }: iProps) => {
+const Main = () => {
+  const { pokemon } = useContext(HomeContext);
+
   return pokemon ? (
     <main>
-      <Chart pokemon={pokemon} />
-      <Card pokemon={pokemon} />
+      <Chart />
+      <Card />
     </main>
   ) : (
     <main>

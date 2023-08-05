@@ -1,22 +1,23 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { ButtonInput } from "../../../styles/buttons";
 import { FormStyled } from "../../../styles/header";
 import { InputSearchStyled } from "../../../styles/inputSearch";
-import { iProps } from "../../../@types";
 import { MagnGlassWhite } from "../../../styles/icons";
+import { HomeContext } from "../../../providers/HomeContext";
 
-const InputSearch = ({ pokemons, findPokemon }: iProps) => {
+const InputSearch = (/* { pokemons, findPokemon }: iProps */) => {
+  const { pokemons, findPokemon } = useContext(HomeContext);
   const [data, setData] = useState("");
 
   function submit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    if(pokemons && findPokemon){
-      findPokemon(data)
+    if (pokemons && findPokemon) {
+      findPokemon(data);
     }
   }
 
-  return (
-    pokemons ? <FormStyled onSubmit={submit}>
+  return pokemons ? (
+    <FormStyled onSubmit={submit}>
       <InputSearchStyled
         type="text"
         placeholder="Insert pokémon's name"
@@ -31,7 +32,9 @@ const InputSearch = ({ pokemons, findPokemon }: iProps) => {
       <ButtonInput type="submit">
         <MagnGlassWhite />
       </ButtonInput>
-    </FormStyled> : <FormStyled onSubmit={submit}>
+    </FormStyled>
+  ) : (
+    <FormStyled onSubmit={submit}>
       <InputSearchStyled
         type="text"
         placeholder="Insert pokémon's name"

@@ -1,4 +1,4 @@
-import { iProps } from "../../../@types";
+import { useContext } from "react";
 import {
   CardPokemon,
   CardImg,
@@ -7,8 +7,11 @@ import {
   CardDiv,
 } from "../../../styles/card";
 import { CardName, Paragraph } from "../../../styles/typography";
+import { HomeContext } from "../../../providers/HomeContext";
 
-const Card = ({ pokemon }: iProps) => {
+const Card = (/* { pokemon }: iProps */) => {
+  const { pokemon } = useContext(HomeContext)
+  console.log(pokemon)
   let cardName: string = "";
   let types: string = "";
   if (pokemon) {
