@@ -39,16 +39,20 @@ export const LogoImg = styled.img`
   align-items: center;
   justify-content: center;
   text-align: center;
-  max-width:100vw;
+  max-width: 100vw;
   height: 10rem;
 `;
 
 export const InputNavDiv = styled.div`
-width: 100%;
-@media (min-width: 1024px) {
-  max-width: 24rem;
-}
-`
+  width: 100%;
+  @media (min-width: 1024px) {
+    max-width: 24rem;
+  }
+
+  @media (min-width: 1360px) {
+    width: 24rem;
+  }
+`;
 
 export const FormStyled = styled.form`
   position: relative;
@@ -60,16 +64,23 @@ export const FormStyled = styled.form`
   }
 
   @media (min-width: 1360px) {
-    width: 23rem;
+    width: 24rem;
   }
 `;
 
 export const NavLink = styled.nav`
-height: 2rem;
-width: 100%;
-display: flex;
-align-items: center;
-justify-content: space-around;
-text-align: center;
-margin-top: 1.5rem;
-`
+  height: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 1.5rem;
+  @media (min-width: 1024px) {
+    width: 20rem;
+  }
+
+  @media (min-width: 1360px) {
+    width: 24rem;
+  }
+`;
