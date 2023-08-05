@@ -41,11 +41,15 @@ export const LogoImg = styled.img`
   text-align: center;
   max-width:100vw;
   height: 10rem;
-
-  @media (min-width: 1024px) {
-    
-  }
 `;
+
+export const InputNavDiv = styled.div`
+width: 100%;
+@media (min-width: 1024px) {
+  max-width: 24rem;
+}
+`
+
 export const FormStyled = styled.form`
   position: relative;
   height: 3.75rem;
@@ -59,3 +63,13 @@ export const FormStyled = styled.form`
     width: 23rem;
   }
 `;
+
+export const NavLink = styled.nav`
+height: 2rem;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+text-align: center;
+margin-top: 1.5rem;
+`

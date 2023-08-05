@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const ButtonInput = styled.button`
   position: absolute;
@@ -25,3 +26,9 @@ export const ButtonInput = styled.button`
     border-color: var(--color-primary-50);
   }
 `;
+
+export const LinkWrapper = styled(Link)`
+    cursor: pointer;
+    background-color: transparent;
+    z-index: 1.5;
+`
