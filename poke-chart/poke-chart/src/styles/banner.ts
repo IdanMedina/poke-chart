@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import { styled } from "styled-components";
 
-export const CardDiv = styled.div`
+export const BannerDiv = styled.div`
   height: 100%;
   width: 100vw;
   display: flex;
@@ -14,26 +14,7 @@ export const CardDiv = styled.div`
   }
 `;
 
-export const CardWrapper = styled.div`
-  display: flex;
-  height: 100%;
-  width: 100vw;
-  min-height: 5rem;
-  padding: 2rem 1rem 3rem 1rem;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-
-  @media (min-width: 1024px) {
-    
-  }
-
-  @media (min-width: 1360px) {
-    
-  }
-`;
-
-export const CardPokemon = styled.div`
+export const BannerPokemon = styled.div`
   display: flex;
   flex-direction: column;
   width: 75vw;
@@ -50,13 +31,13 @@ export const CardPokemon = styled.div`
   }
 `;
 
-export const CardImgDiv = styled.div`
+export const BannerImgDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 1rem;
 `;
-export const CardImg = styled.img`
+export const BannerImg = styled.img`
   object-fit: cover;
   background: var(--color-primary-20);
   border-radius: 5px;
@@ -70,7 +51,7 @@ export const CardImg = styled.img`
     z-index:2;
   }
 `;
-export const CardInfo = styled.div`
+export const BannerInfo = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;

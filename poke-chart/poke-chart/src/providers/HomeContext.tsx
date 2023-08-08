@@ -42,6 +42,7 @@ export const HomeProvider = ({ children }: iHomeProviderProps) => {
             sprites: response.data.sprites.other.home.front_default,
             stats: response.data.stats,
             types: response.data.types,
+            abilities: response.data.abilities
           };
           setPokemon(pokemonFound);
         })

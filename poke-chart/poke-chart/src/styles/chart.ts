@@ -14,6 +14,25 @@ export const ChartDiv = styled.div`
   }
 `
 
+export const ChartWrapper = styled.div`
+  display: flex;
+  height: 100%;
+  width: 100vw;
+  min-height: 5rem;
+  padding: 2rem 1rem 3rem 1rem;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 1024px) {
+    
+  }
+
+  @media (min-width: 1360px) {
+    
+  }
+`;
+
 export const ChartDivInfoOne = styled.div`
   display: flex;
   width: 100%;

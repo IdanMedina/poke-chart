@@ -3,8 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import Header from "../components/Header";
 import HomePage from "../pages/HomePage";
 import { HomeProvider } from "../providers/HomeContext";
-import Chart from "../components/Main/Chart";
-import Card from "../components/Main/Card";
+import CardMain from "../components/CardMain";
+import ChartMain from "../components/ChartMain";
 
 export const Router = () => {
   return (
@@ -18,8 +18,8 @@ export const Router = () => {
         }
       >
         <Route index element={<HomePage />} />
-        <Route path="/chart" element={<Chart />} />
-        <Route path="/card" element={<Card />} />
+        <Route path="/chart" element={<ChartMain />} />
+        <Route path="/card" element={< CardMain/>} />
       </Route>
     </Routes>
   );

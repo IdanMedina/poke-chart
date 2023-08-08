@@ -28,6 +28,12 @@ type type = {
   };
 };
 
+type  ability = {
+  ability: {
+    name: string
+  }
+}
+
 export interface iPokemonFound {
   id: number;
   name: string;
@@ -36,6 +42,7 @@ export interface iPokemonFound {
   sprites: string;
   stats: Array<status>;
   types: Array<type>;
+  abilities: Array<ability>
 }
 
 export interface iStyledProps {

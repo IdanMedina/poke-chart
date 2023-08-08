@@ -11,7 +11,7 @@ import { HomeContext } from "../../../providers/HomeContext";
 
 const Card = () => {
   const { pokemon } = useContext(HomeContext)
-
+ 
   let cardName: string = "";
   let types: string = "";
   if (pokemon) {
