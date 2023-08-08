@@ -1,19 +1,27 @@
 import { useContext } from "react";
 import {
-  CardPokemon,
-  CardImg,
-  CardImgDiv,
-  CardInfo,
-  CardDiv,
-} from "../../../styles/card";
-import { CardName, Paragraph } from "../../../styles/typography";
+  AbilityTitle,
+  BannerName,
+  ParagraphBanner,
+} from "../../../styles/typography";
 import { HomeContext } from "../../../providers/HomeContext";
+import {
+  AbilitiesDiv,
+  BannerAbilityList,
+  BannerAbilityStat,
+  BannerDiv,
+  BannerImg,
+  BannerImgDiv,
+  BannerInfo,
+  BannerPokemon,
+} from "../../../styles/banner";
 
-const Card = () => {
-  const { pokemon } = useContext(HomeContext)
- 
+const Banner = () => {
+  const { pokemon } = useContext(HomeContext);
+
   let cardName: string = "";
   let types: string = "";
+  let abilities: Array<string> = [];
   if (pokemon) {
     const pokemonName: string | undefined = pokemon.name;
     const pokemonCapitalizedName: string =
@@ -21,23 +29,34 @@ const Card = () => {
     cardName = pokemonCapitalizedName;
 
     pokemon.types.forEach((type) => (types += ` ${type.type.name}`));
+    pokemon.abilities.forEach((ability) =>
+      abilities.push(ability.ability.name)
+    );
   }
-  
+
   return (
-    <CardDiv>
-      <CardPokemon>
-        <CardImgDiv>
-          <CardImg src={pokemon?.sprites} alt={pokemon?.name} />
-        </CardImgDiv>
-        <CardName>{cardName}</CardName>
-        <CardInfo>
-          <Paragraph>Height: {pokemon?.height} ft.</Paragraph>
-          <Paragraph>Weight: {pokemon?.weight} kg</Paragraph>
-          <Paragraph>Type: {types}</Paragraph>
-        </CardInfo>
-      </CardPokemon>
-    </CardDiv>
+    <BannerDiv>
+      <BannerPokemon>
+        <BannerImgDiv>
+          <BannerImg src={pokemon?.sprites} alt={pokemon?.name} />
+        </BannerImgDiv>
+        <BannerInfo>
+          <BannerName>{cardName}</BannerName>
+          <ParagraphBanner>Height: {pokemon?.height} ft.</ParagraphBanner>
+          <ParagraphBanner>Weight: {pokemon?.weight} kg</ParagraphBanner>
+          <ParagraphBanner>Type: {types}</ParagraphBanner>
+        </BannerInfo>
+        <AbilitiesDiv>
+          <AbilityTitle>Abilities</AbilityTitle>
+          <BannerAbilityList>
+            {abilities.map((ability) => (
+              <BannerAbilityStat>{ability}</BannerAbilityStat>
+            ))}
+          </BannerAbilityList>
+        </AbilitiesDiv>
+      </BannerPokemon>
+    </BannerDiv>
   );
 };
 
-export default Card;
+export default Banner;

@@ -23,14 +23,6 @@ export const CardWrapper = styled.div`
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-
-  @media (min-width: 1024px) {
-    
-  }
-
-  @media (min-width: 1360px) {
-    
-  }
 `;
 
 export const CardPokemon = styled.div`

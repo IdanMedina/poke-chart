@@ -28,7 +28,7 @@ type type = {
   };
 };
 
-type  ability = {
+export type  ability = {
   ability: {
     name: string
   }

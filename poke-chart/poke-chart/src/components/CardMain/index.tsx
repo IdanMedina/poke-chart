@@ -1,10 +1,10 @@
 import { CardWrapper } from "../../styles/card";
-import Card from "../Main/Card";
+import Banner from "./CardBanner";
 
 const CardMain = () => {
   return (
     <CardWrapper>
-      <Card />
+      <Banner />
     </CardWrapper>
   );
 };

@@ -4,7 +4,7 @@ import { iStyledProps } from "../@types";
 export const Title = styled.h1`
   font-weight: 800;
   font-size: 4rem;
-  font-family: 'Handjet', cursive;
+  font-family: "Handjet", cursive;
   color: var(--grey-100);
 `;
 
@@ -13,6 +13,11 @@ export const Paragraph = styled.p`
   font-size: 1rem;
   color: var(--color-secondary);
 `;
+export const ParagraphBanner = styled.p`
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--grey-20);
+`;
 
 export const CardName = styled.h2`
   font-weight: 600;
@@ -20,20 +25,34 @@ export const CardName = styled.h2`
   color: var(--color-primary);
   margin-bottom: 1.5rem;
 `;
+export const BannerName = styled.h2`
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--color-primary-20);
+  margin-bottom: 1.5rem;
+`;
+
+export const AbilityTitle = styled.h3`
+  font-weight: 600;
+  font-size: 1.33rem;
+  color: var(--grey-20);
+  margin-bottom: 1.5rem;
+`;
+
 export const HPStat = styled.h4<iStyledProps>`
   padding-bottom: 2rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: ${(props) => props.fontSize! * 0.01 + 1.5}rem;
   color: var(--color-primary);
-  transition: transform .5s;
+  transition: transform 0.5s;
   cursor: pointer;
   &:hover {
     transform: scale(2);
     opacity: 0.67;
-    z-index:2;
+    z-index: 2;
   }
-  
+
   @media (min-width: 1024px) {
     font-size: ${(props) => props.fontSize! * 0.0125 + 1.5}rem;
   }
@@ -43,12 +62,12 @@ export const AttStat = styled.h4<iStyledProps>`
   font-weight: 600;
   font-size: ${(props) => props.fontSize! * 0.01 + 1.5}rem;
   color: var(--color-secondary-50);
-  transition: transform .5s;
+  transition: transform 0.5s;
   cursor: pointer;
   &:hover {
     transform: scale(2);
     opacity: 0.67;
-    z-index:2;
+    z-index: 2;
   }
 
   @media (min-width: 1024px) {
@@ -59,12 +78,12 @@ export const DefStat = styled.h4<iStyledProps>`
   font-weight: 600;
   font-size: ${(props) => props.fontSize! * 0.01 + 1.5}rem;
   color: var(--grey-100);
-  transition: transform .5s;
+  transition: transform 0.5s;
   cursor: pointer;
   &:hover {
     transform: scale(2);
     opacity: 0.67;
-    z-index:2;
+    z-index: 2;
   }
 
   @media (min-width: 1024px) {
@@ -76,12 +95,12 @@ export const SpAttStat = styled.h4<iStyledProps>`
   font-weight: 600;
   font-size: ${(props) => props.fontSize! * 0.01 + 1.5}rem;
   color: var(--color-secondary);
-  transition: transform .5s;
+  transition: transform 0.5s;
   cursor: pointer;
   &:hover {
     transform: scale(2);
     opacity: 0.67;
-    z-index:2;
+    z-index: 2;
   }
 
   @media (min-width: 1024px) {
@@ -93,12 +112,12 @@ export const SpDefStat = styled.h4<iStyledProps>`
   font-weight: 600;
   font-size: ${(props) => props.fontSize! * 0.01 + 1.5}rem;
   color: var(--grey-50);
-  transition: transform .5s;
+  transition: transform 0.5s;
   cursor: pointer;
   &:hover {
     opacity: 0.67;
     transform: scale(2);
-    z-index:2;
+    z-index: 2;
   }
 
   @media (min-width: 1024px) {
@@ -109,12 +128,12 @@ export const SpeedStat = styled.h4<iStyledProps>`
   font-weight: 600;
   font-size: ${(props) => props.fontSize! * 0.01 + 1.5}rem;
   color: var(--color-primary-50);
-  transition: transform .5s;
+  transition: transform 0.5s;
   cursor: pointer;
   &:hover {
     transform: scale(2);
     opacity: 0.67;
-    z-index:2;
+    z-index: 2;
   }
 
   @media (min-width: 1024px) {

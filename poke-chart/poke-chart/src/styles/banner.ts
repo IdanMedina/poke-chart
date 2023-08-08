@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 export const BannerDiv = styled.div`
   height: 100%;
-  width: 100vw;
+  min-width: 100%;
   display: flex;
   padding: 2rem;
   align-items: center;
@@ -17,17 +17,22 @@ export const BannerDiv = styled.div`
 export const BannerPokemon = styled.div`
   display: flex;
   flex-direction: column;
-  width: 75vw;
+  max-width: 100vw;
   align-items: center;
-  height: 24rem;
+  justify-content: space-evenly;
+  height: 100vh;
   padding: 1rem 2rem;
-  background: var(--color-secondary-20);
-  border: 0.125rem solid var(--color-secondary-20);
+  gap: 1rem;
+  background: var(--color-secondary);
+  border: 0.125rem solid var(--color-secondary);
   box-shadow: 0.25rem 0.25rem 0.25rem 0.25rem rgba(80, 60, 30, 0.3);
   border-radius: 1rem;
 
-  @media (min-width: 1024px) {
-    width: 67%;
+  @media (min-width: 780px) {
+    max-width: 100%;
+    height: 24rem;
+    flex-direction: row;
+    gap: 3rem;
   }
 `;
 
@@ -39,7 +44,7 @@ export const BannerImgDiv = styled.div`
 `;
 export const BannerImg = styled.img`
   object-fit: cover;
-  background: var(--color-primary-20);
+  background: var(--grey-0);
   border-radius: 5px;
   height: 100%;
   width: 10rem;
@@ -58,4 +63,22 @@ export const BannerInfo = styled.div`
   flex-direction: column;
   width: 100%;
   gap: 1rem;
+`;
+export const BannerAbilityList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  list-style: inside;
+  color: var(--color-secondary-20);
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  gap: 0.5rem;
+`;
+export const BannerAbilityStat = styled.li`
+  width: 100%;
+`;
+export const AbilitiesDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
 `;
